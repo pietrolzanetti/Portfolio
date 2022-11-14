@@ -17,12 +17,11 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Pietro's homepage" />
         <meta name="author" content="Pietro Zanetti" />
-        {/* <link rel="apple-touch-icon" href="apple-touch-icon.png" /> */}
-        {/* <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> */}
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta property="og:site_name" content="Pietro Zanetti" />
         <meta name="og:title" content="Pietro Zanetti" />
         <meta property="og:type" content="website" />
-        {/* <meta property="og:image" content="https://site/card.png" /> */}
         <title>Homepage - Pietro Zanetti</title>
       </Head>
 

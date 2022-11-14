@@ -12,7 +12,9 @@ import {
   chakra,
   HStack,
   extendTheme,
-  Text
+  Text,
+  Flex,
+  Spacer
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -36,7 +38,7 @@ const Home = () => (
     <Container maxW={"initial"}>
       <Box
         borderRadius="lg"
-        mb={6}
+        // mb={6}
         mt={6}
         p={3}
         textAlign="center"
@@ -77,12 +79,14 @@ const Home = () => (
 
       </Box>
 
-      <Box my={4}>
-        <HStack>
+      <Box my={4} align={"center"}>
+        <Flex display="{{ md: 'flex' }}" >
           <Link href="https://github.com/pietrolzanetti" target="_blank">
             <Button
               variant={useColorModeValue('light', 'dark')}
-              // colorScheme="colorone"
+              mt="2"
+              mr={2}
+              w="40"
               css={{ backdropFilter: 'blur(10px)' }}
               leftIcon={<IoLogoGithub />}
             >
@@ -92,7 +96,10 @@ const Home = () => (
           <Link href="https://www.linkedin.com/in/pietrolzanetti/" target="_blank">
             <Button
               variant={useColorModeValue('light', 'dark')}
-              // colorScheme="colorone"
+              mt="2"
+              mr={2}
+              w="40"
+              // w="md"
               css={{ backdropFilter: 'blur(10px)' }}
               leftIcon={<IoLogoLinkedin />}
             >
@@ -102,49 +109,16 @@ const Home = () => (
           <Link href="/Pietro_Resume.pdf" target="_blank">
             <Button
               variant={useColorModeValue('light', 'dark')}
-              // colorScheme="colorone"
+              mt="2"
+              mr={2}
+              w="40"
               css={{ backdropFilter: 'blur(10px)' }}
               leftIcon={<IoDocument />}
             >
               Resume
             </Button>
           </Link>
-        </HStack>
-      </Box>
-
-
-      <Box display={{ md: 'flex' }}>
-        {/* <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Pietro Zanetti
-          </Heading>
-          <p>.NET Software Engineer</p>
-        </Box> */}
-        {/* <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        >
-          <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            w="100px"
-            h="100px"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
-          >
-            <ProfileImage
-              src="/images/perfil.jpg"
-              alt="Profile image"
-              borderRadius="full"
-              width="100"
-              height="100"
-            />
-          </Box>
-        </Box> */}
+        </Flex>
       </Box>
 
       <Section delay={0.1}>
