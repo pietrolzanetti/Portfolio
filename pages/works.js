@@ -6,6 +6,11 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbANClockTree from '../public/images/works/AN-ClockTree-thumb.png'
 import thumbProffy from '../public/images/works/proffy-thumb.png'
 import thumbapi from '../public/images/works/api-thumb.png'
+import thumbquestions from '../public/images/works/questions-thumb.png'
+import thumbmicroservices from '../public/images/works/microservices-thumb.png'
+import thumbportfolio from '../public/images/works/portfolio-thumb.png'
+
+
 
 const Works = () => (
   <Layout title="Works">
@@ -15,6 +20,37 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+
+        <Section>
+          <WorkGridItem
+            id="microservices"
+            title="Microservices-based E-Commerce"
+            thumbnail={thumbmicroservices}
+          >
+            An E-Commerce Web App based on microservices.
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="portfolio"
+            title="Portfolio Website"
+            thumbnail={thumbportfolio}
+          >
+            Web project developed for personal professional profile presentation.
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem
+            id="QuestionsWebApp"
+            title="Questions - Web App"
+            thumbnail={thumbquestions}
+          >
+            A simple WebApp for questions making.
+          </WorkGridItem>
+        </Section>
+
         <Section>
           <WorkGridItem
             id="AN-ClockTree"
@@ -44,6 +80,10 @@ const Works = () => (
             Aplicação Web e Mobile com foco em criar uma ponte entre alunos e professores.
           </WorkGridItem>
         </Section>
+
+
+
+
 
 
         {/* <Section delay={0.1}>
